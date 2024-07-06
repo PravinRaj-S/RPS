@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #74512D;
+    padding: 1.5rem;
+    text-align: center;
+    color: #F8F4E1;
+}
+
+main{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F4E1;
+
+}
+
+#playBoard{
+    width: 400px;
+    height: 600PX;
+    border: 2px solid #543310;
+}
+
+#computerBoard{
+    display: flex;
+    justify-self: center;
+    transform: rotate(180deg);
+}
+
+#board{
+    display: grid;
+}
+
+#playerBoard{
+    display: flex;
+    justify-content: center;
+}
+
+#computer{
+    padding: 10px;
+    text-align: center;
+    color: #543310;
+}
+
+#player{
+    padding: 10px;
+    text-align: center;
+    color: #543310;
+
+}
+
+#player #buttons{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.pButton {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 0.375rem 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.pButton {
+    color: #F8F4E1; /* White text */
+    background-color: #543310; /* Primary background color */
+    border-color: #543310; /* Primary border color */
+}
+
+.pButton:hover {
+  color: #F8F4E1;
+  background-color: #AF8F6F; /* Darker shade for hover */
+  border-color: #0a58ca;
+}
+
+.pButton:focus, .pButton.focus {
+  color: #F8F4E1;
+  background-color: #AF8F6F;
+  border-color: #AF8F6F;
+  box-shadow: 0 0 0 0.25rem #ad9074; /* Blue shadow */
+}
+
+#winStatus{
+    padding: 5px;
+    text-align: center;
+    color: #543310;
+
+}
