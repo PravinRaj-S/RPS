@@ -24,7 +24,7 @@ const generateComputersChoice = () =>{
     let computersChoiceIndex    = Math.floor(Math.random() * choiceArray.length)
     let computersChoice         = choiceArray[computersChoiceIndex] 
     let imgElement              = document.getElementById('computerChoiceImg')
-    imgElement.src              = `/Hand Sign Images/${computersChoice}.png`
+    imgElement.src              = `Hand Sign Images/${computersChoice}.png`
 
     return computersChoice
 }
